@@ -1,0 +1,31 @@
+$primary-color: #202027;
+$secondary-color: #FFFFFF;
+$header-color: #E1FF8F;
+$nav-color: #BCEC30;
+$font-family: "Montserrat", serif;
+
+$font-size-very-small: 16px;
+$font-size-medium: 24px;
+$font-size-big: 30px;
+$font-size-xbig: 32px;
+$font-size-xlarge: 48px;
+$font-size-xxlarge: 64px;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-very-small: 17px;
+$line-height-medium: 32px;
+$line-height-big: 39px;
+$line-height-xlarge: 58px;
+$line-height-xxlarge: 78px;
+
+@mixin button-style {
+    box-sizing: border-box;
+    width: 247px;
+    height: 66px;
+    border-radius: 60px;
+    background-color: $primary-color;
+    color: $secondary-color;
+}
