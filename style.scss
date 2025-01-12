@@ -21,7 +21,9 @@ body {
 
 .top {
     background-color: $header-color;
-
+    background-image: url(images/Group.png);
+    background-repeat: no-repeat;
+    background-position: right 0 top 0;
     &__title {
         padding-top: 196px;
         font-size: $font-size-xxlarge;
@@ -77,11 +79,6 @@ body {
         line-height: $line-height-medium;
         margin-bottom: 72px;
     }
-}
-
-.games {
-    column-gap: 32px;
-    row-gap: 32px;
 }
 
 .games {
