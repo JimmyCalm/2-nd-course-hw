@@ -2,6 +2,7 @@ $primary-color: #202027;
 $secondary-color: #FFFFFF;
 $header-color: #E1FF8F;
 $nav-color: #BCEC30;
+$number-color: #F7F7F7;
 $font-family: "Montserrat", serif;
 
 $font-size-very-small: 16px;
@@ -12,6 +13,7 @@ $font-size-xlarge: 48px;
 $font-size-xxlarge: 64px;
 
 $font-weight-regular: 400;
+$font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
@@ -28,4 +30,6 @@ $line-height-xxlarge: 78px;
     border-radius: 60px;
     background-color: $primary-color;
     color: $secondary-color;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-semibold;
 }

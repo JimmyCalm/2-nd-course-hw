@@ -11,6 +11,136 @@ a {
 }
 
 .center {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body {
+    font-family: $font-family;
+}
+
+.top {
+    background-color: $header-color;
+
+    &__title {
+        padding-top: 196px;
+        font-size: $font-size-xxlarge;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-xxlarge;
+        color: $primary-color;
+        max-width: 769px;
+        padding-bottom: 24px;
+    }
+
+    &__subtitle {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-regular;
+        line-height: $line-height-medium;
+        padding-bottom: 48px;
+
+        &_bold {
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+
+    &__btn {
+        @include button-style;
+        margin-bottom: 156px;
+    }
+
+}
+
+.nav {
+    height: 90px;
+    background-color: $nav-color;
+}
+
+.main {
+    background-color: $primary-color;
+}
+
+.about {
+    padding-bottom: 144px;
+
+    &__title {
+        color: $secondary-color;
+        font-size: $font-size-xxlarge;
+        font-weight: $font-weight-bold;
+        padding-top: 94px;
+    }
+
+    &__subtitle {
+        color: $secondary-color;
+        font-size: $font-size-medium;
+        font-weight: $font-weight-regular;
+        line-height: $line-height-medium;
+        margin-bottom: 72px;
+    }
+}
+
+.games {
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 473px;
+        width: 378px;
+        background-color: $secondary-color;
+        border-radius: 30px;
+
+        &_big {
+            height: 551px;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+    }
+
+    &__btn {
+        width: 107px;
+        height: 36px;
+        color: $primary-color;
+        background-color: $number-color;
+        border-radius: 52px;
+        font-size: $line-height-very-small;
+        font-weight: $font-weight-medium;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        margin-left: 32px;
+    }
+
+    &__name {
+        color: $primary-color;
+        font-size: $font-size-big;
+        font-weight: $font-weight-bold;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.footer {
+    height: 150px;
+    background-color: $header-color;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__text {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-semibold;
+
+    }
 }
