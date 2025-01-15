@@ -1,0 +1,22 @@
+@media (max-width: 767px) {
+    .center{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .about{
+        display: none;
+    }
+    .game{
+        width: 343px;
+        &__btn{
+            display: none;
+        }
+        &__desc{
+            display: block;
+        }
+        &__mob-btn{
+            display: block;
+            @include mob-button-style;
+        }
+    }
+}

@@ -67,8 +67,6 @@ body {
 }
 
 .about {
-    padding-bottom: 144px;
-
     &__title {
         color: $secondary-color;
         font-size: $font-size-xxlarge;
@@ -89,6 +87,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    padding-bottom: 144px;
 }
 
 .game {
@@ -99,7 +98,6 @@ body {
     background-color: $secondary-color;
     border-radius: 30px;
     height: 100%;
-    flex-grow: 1;
 
     &__img {
         max-width: 100%;
@@ -128,6 +126,12 @@ body {
         padding-right: 32px;
         padding-bottom: 36px;
     }
+    &__desc{
+        display: none;
+    }
+    &__mob-btn{
+        display: none;
+    }
 }
 .game:nth-child(4),
 .game:nth-child(6) {
@@ -148,3 +152,4 @@ body {
 
     }
 }
+@import 'mobile';
