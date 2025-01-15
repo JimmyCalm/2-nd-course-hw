@@ -1,22 +1,65 @@
 @media (max-width: 767px) {
-    .center{
+    .center {
         padding-left: 16px;
         padding-right: 16px;
     }
-    .about{
+
+    .top {
+        text-align: center;
+
+        &__title {
+            font-size: $mob-font-large;
+        }
+    }
+
+    .about {
         display: none;
     }
-    .game{
+
+    .about-mob {
+        display: block;
+        font-size: $mob-font-large;
+        font-weight: $font-weight-bold;
+        color: $secondary-color;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .game {
         width: 343px;
-        &__btn{
+
+        &__btn {
             display: none;
         }
-        &__desc{
+
+        &__desc {
             display: block;
         }
-        &__mob-btn{
+
+        &__mob-btn {
             display: block;
             @include mob-button-style;
+        }
+
+        &__name {
+            padding-top: 29px;
+            padding-left: 29px;
+            padding-bottom: 16px;
+        }
+
+        &__desc {
+            padding-left: 29px;
+            padding-bottom: 32px;
+        }
+
+        &__mob-btn {
+            margin-left: 29px;
+            margin-bottom: 32px;
+        }
+
+        &:nth-child(4),
+        &:nth-child(6) {
+            margin-top: -0px;
         }
     }
 }
