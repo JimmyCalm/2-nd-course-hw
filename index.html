@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My game site</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header class="top center">
+        <h1 class="top__title">Добро пожаловать<br> на мой сайт мини-игр</h1>
+        <p class="top__subtitle">Тебе предстоит пройти несколько увлекательных игр. <br>Если готов, нажимай <span class="top__subtitle_bold">«Поехали!»</span> и <span class="top__subtitle_bold">приступай.</span></p>
+        <a class="top__btn" href="#games">Поехали!</a>
+    </header>
+    <nav class="nav"></nav>
+    <main class="main">
+        <section class="about center">
+            <h2 class="about__title">Об играх</h2>
+            <p class="about__subtitle">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый. <br>
+                Все игры доступны для пользования.</p>
+                <div id="games" class="games">
+                    <article class="game"><a href="">
+                        <img class="game__img" src="images/1.png" alt="img">
+                        <p class="game__btn">Игра № 1</p>
+                        <h3 class="game__name">Угадай число</h3>
+                    </a></article>
+                
+                    <article class="game"><a href="">
+                        <img class="game__img" src="images/2.png" alt="img">
+                        <p class="game__btn">Игра № 2</p>
+                        <h3 class="game__name">Простая арифметика</h3>
+                    </a></article>
+                
+                    <article class="game"><a href="">
+                        <img class="game__img" src="images/3.png" alt="img">
+                        <p class="game__btn">Игра № 3</p>
+                        <h3 class="game__name">Переверни текст</h3>
+                    </a></article>
+                
+                    <article class="game"><a href="">
+                        <img class="game__img" src="images/4.png" alt="img">
+                        <p class="game__btn">Игра № 4</p>
+                        <h3 class="game__name">Камень,<br> ножницы,<br> бумага</h3>
+                    </a></article>
+                
+                    <article class="game"><a href="">
+                        <img class="game__img" src="images/5.png" alt="img">
+                        <p class="game__btn">Игра № 5</p>
+                        <h3 class="game__name">Простая викторина</h3>
+                    </a></article>
+                
+                    <article class="game"><a href="">
+                        <img class="game__img" src="images/6.png" alt="img">
+                        <p class="game__btn">Игра № 6</p>
+                        <h3 class="game__name">Генератор<br> случайных<br> цветов</h3>
+                    </a></article>
+                </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Все права защищены.</p>
+    </footer>
 </body>
 </html>

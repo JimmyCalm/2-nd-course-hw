@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+body {
+  font-family: "Montserrat", serif;
+}
+
+.top {
+  background-color: #E1FF8F;
+  background-image: url(images/Group.png);
+  background-repeat: no-repeat;
+  background-position: right 0 top 0;
+}
+.top__title {
+  padding-top: 196px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #202027;
+  max-width: 769px;
+  padding-bottom: 24px;
+}
+.top__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 48px;
+}
+.top__subtitle_bold {
+  font-weight: 600;
+}
+.top__btn {
+  display: inline-block;
+  text-align: center;
+  padding-top: 16px;
+  box-sizing: border-box;
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  background-color: #202027;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 156px;
+}
+
+.nav {
+  height: 90px;
+  background-color: #BCEC30;
+}
+
+.main {
+  background-color: #202027;
+}
+
+.about {
+  padding-bottom: 144px;
+}
+.about__title {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 700;
+  padding-top: 94px;
+}
+.about__subtitle {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 72px;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 378px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  height: 100%;
+  flex-grow: 1;
+}
+.game__img {
+  max-width: 100%;
+}
+.game__btn {
+  text-align: center;
+  padding-top: 8px;
+  width: 107px;
+  height: 36px;
+  color: #202027;
+  background-color: #F7F7F7;
+  border-radius: 52px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  margin-left: 32px;
+}
+.game__name {
+  color: #202027;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 36px;
+}
+
+.game:nth-child(4),
+.game:nth-child(6) {
+  margin-top: -32px;
+}
+
+.footer {
+  height: 150px;
+  background-color: #E1FF8F;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer__text {
+  font-size: 24px;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */
