@@ -77,6 +77,15 @@ body {
 
 .main {
     background-color: $primary-color;
+    background-image: 
+                    url(images/Star\ 1.svg),
+                    url(images/Star\ 11.svg),
+                    url(images/Star\ 12.svg);
+    background-repeat: no-repeat;
+    background-position:
+                        top 77px right 0px,
+                        bottom 665px left 25px,
+                        bottom 588px left 40px;
 }
 
 .about {

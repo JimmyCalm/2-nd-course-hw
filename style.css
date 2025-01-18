@@ -67,6 +67,9 @@ body {
 
 .main {
   background-color: #202027;
+  background-image: url(images/Star\ 1.svg), url(images/Star\ 11.svg), url(images/Star\ 12.svg);
+  background-repeat: no-repeat;
+  background-position: top 77px right 0px, bottom 665px left 25px, bottom 588px left 40px;
 }
 
 .about__title {
@@ -166,6 +169,9 @@ body {
   }
   .top__title {
     font-size: 40px;
+  }
+  .main {
+    background-image: none;
   }
   .about {
     display: none;
