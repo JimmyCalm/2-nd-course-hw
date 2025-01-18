@@ -94,6 +94,7 @@ body {
         font-size: $font-size-xxlarge;
         font-weight: $font-weight-bold;
         padding-top: 94px;
+        padding-bottom: 24px;
     }
 
     &__subtitle {
@@ -123,6 +124,12 @@ body {
     background-color: $secondary-color;
     border-radius: 30px;
     height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover{
+        transform: scale(1.10);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
     &__img {
         max-width: 100%;
