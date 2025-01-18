@@ -19,9 +19,9 @@ body {
 
 .top {
   background-color: #E1FF8F;
-  background-image: url(images/Group.png);
+  background-image: url(images/Group.png), url(images/Star\ 3.svg), url(images/Star\ 2.svg), url(images/Star\ 5.svg), url(images/Star\ 4.svg);
   background-repeat: no-repeat;
-  background-position: right 0 top 0;
+  background-position: right 0px top 0px, left 156px top 59px, left 63px top 94px, right 455px top 538px, right 344px top 568px;
 }
 .top__title {
   padding-top: 196px;
@@ -40,6 +40,9 @@ body {
 }
 .top__subtitle_bold {
   font-weight: 600;
+}
+.top__subtitle__bg-image {
+  position: absolute;
 }
 .top__btn {
   display: inline-block;
@@ -155,6 +158,10 @@ body {
     padding-right: 16px;
   }
   .top {
+    background-image: url(images/Star-mob.svg), url(images/Star\ 3.svg), url(images/Star\ 2.svg), url(images/Star\ 5.svg), url(images/Star\ 4.svg);
+    background-repeat: no-repeat;
+    background-position: right 0px top 0px, left 91px top 64px, left 37px top 97px, right 86px bottom 74px, right 34px bottom 28px;
+    background-size: auto, 21px 21px, 35px 35px, 18px 18px, 39px 41px;
     text-align: center;
   }
   .top__title {

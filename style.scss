@@ -21,9 +21,19 @@ body {
 
 .top {
     background-color: $header-color;
-    background-image: url(images/Group.png);
+    background-image: 
+                    url(images/Group.png),
+                    url(images/Star\ 3.svg),
+                    url(images/Star\ 2.svg),
+                    url(images/Star\ 5.svg),
+                    url(images/Star\ 4.svg);
     background-repeat: no-repeat;
-    background-position: right 0 top 0;
+    background-position: 
+                        right 0px top 0px,
+                        left 156px top 59px,
+                        left 63px top 94px,
+                        right 455px top 538px,
+                        right 344px top 568px;
 
     &__title {
         padding-top: 196px;
@@ -43,6 +53,9 @@ body {
 
         &_bold {
             font-weight: $font-weight-semibold;
+        }
+        &__bg-image{
+            position: absolute;
         }
     }
 
