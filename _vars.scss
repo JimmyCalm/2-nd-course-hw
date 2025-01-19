@@ -27,6 +27,7 @@ $line-height-xxlarge: 78px;
 
 @mixin button-style {
     box-sizing: border-box;
+    font: inherit;
     width: 247px;
     height: 66px;
     border-radius: 60px;
@@ -45,6 +46,7 @@ $line-height-xxlarge: 78px;
 }
 @mixin mob-button-style {
     box-sizing: border-box;
+    font: inherit;
     width: 285px;
     height: 55px;
     border-radius: 60px;

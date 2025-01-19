@@ -21,19 +21,19 @@ body {
 
 .top {
     background-color: $header-color;
-    background-image: 
-                    url(images/Group.png),
-                    url(images/Star\ 3.svg),
-                    url(images/Star\ 2.svg),
-                    url(images/Star\ 5.svg),
-                    url(images/Star\ 4.svg);
+    background-image:
+        url(images/Group.png),
+        url(images/Star\ 3.svg),
+        url(images/Star\ 2.svg),
+        url(images/Star\ 5.svg),
+        url(images/Star\ 4.svg);
     background-repeat: no-repeat;
-    background-position: 
-                        right 0px top 0px,
-                        left 156px top 59px,
-                        left 63px top 94px,
-                        right 455px top 538px,
-                        right 344px top 568px;
+    background-position:
+        right 0px top 0px,
+        left 156px top 59px,
+        left 63px top 94px,
+        right 455px top 538px,
+        right 344px top 568px;
 
     &__title {
         padding-top: 196px;
@@ -54,7 +54,8 @@ body {
         &_bold {
             font-weight: $font-weight-semibold;
         }
-        &__bg-image{
+
+        &__bg-image {
             position: absolute;
         }
     }
@@ -77,15 +78,23 @@ body {
 
 .main {
     background-color: $primary-color;
-    background-image: 
-                    url(images/Star\ 1.svg),
-                    url(images/Star\ 11.svg),
-                    url(images/Star\ 12.svg);
+    background-image:
+        url(images/Star\ 1.svg),
+        url(images/Star\ 11.svg),
+        url(images/Star\ 12.svg),
+        url(images/Star\ 7.svg),
+        url(images/Star\ 6.svg),
+        url(images/Star\ 10.svg),
+        url(images/Star\ 8.svg);
     background-repeat: no-repeat;
     background-position:
-                        top 77px right 0px,
-                        bottom 665px left 25px,
-                        bottom 588px left 40px;
+        top 77px right 0px,
+        top 770px left 25px,
+        top 822px left 40px,
+        bottom 3367px right 123px,
+        bottom 3298px right 44px,
+        bottom 45px right 150px,
+        bottom 65px right 52px;
 }
 
 .about {
@@ -105,15 +114,12 @@ body {
         margin-bottom: 72px;
     }
 }
-.about-mob{
-    display: none;
-}
 
 .games {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-    padding-bottom: 144px;
+
 }
 
 .game {
@@ -126,7 +132,8 @@ body {
     height: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    &:hover{
+
+    &:hover {
         transform: scale(1.10);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
@@ -157,16 +164,85 @@ body {
         padding-left: 32px;
         padding-bottom: 36px;
     }
-    &__desc{
+
+    &__desc {
         display: none;
     }
-    &__mob-btn{
+
+    &__mob-btn {
         display: none;
     }
 }
+
 .game:nth-child(4),
 .game:nth-child(6) {
     margin-top: -32px;
+}
+
+.mini-games {
+    padding-bottom: 144px;
+
+    &__title {
+        color: $secondary-color;
+        font-size: $font-size-xxlarge;
+        font-weight: $font-weight-bold;
+        padding-top: 94px;
+        padding-bottom: 72px;
+    }
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.mini-game {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    background-color: $secondary-color;
+    border-radius: 30px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.10);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 600px;
+    }
+
+    &__name {
+        color: $primary-color;
+        font-size: $font-size-xlarge;
+        font-weight: $font-weight-bold;
+        padding-left: 48px;
+        padding-top: 48px;
+        padding-bottom: 24px;
+    }
+
+    &__desc {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-regular;
+        line-height: $line-height-medium;
+        color: $primary-color;
+        padding-left: 48px;
+        padding-bottom: 36px;
+    }
+
+    &__mob-btn {
+        @include button-style;
+        margin-left: 48px;
+    }
 }
 
 .footer {
@@ -183,4 +259,5 @@ body {
 
     }
 }
+
 @import 'mobile';
