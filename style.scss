@@ -21,9 +21,19 @@ body {
 
 .top {
     background-color: $header-color;
-    background-image: url(images/Group.png);
+    background-image: 
+                    url(images/Group.png),
+                    url(images/Star\ 3.svg),
+                    url(images/Star\ 2.svg),
+                    url(images/Star\ 5.svg),
+                    url(images/Star\ 4.svg);
     background-repeat: no-repeat;
-    background-position: right 0 top 0;
+    background-position: 
+                        right 0px top 0px,
+                        left 156px top 59px,
+                        left 63px top 94px,
+                        right 455px top 538px,
+                        right 344px top 568px;
 
     &__title {
         padding-top: 196px;
@@ -43,6 +53,9 @@ body {
 
         &_bold {
             font-weight: $font-weight-semibold;
+        }
+        &__bg-image{
+            position: absolute;
         }
     }
 
@@ -64,16 +77,24 @@ body {
 
 .main {
     background-color: $primary-color;
+    background-image: 
+                    url(images/Star\ 1.svg),
+                    url(images/Star\ 11.svg),
+                    url(images/Star\ 12.svg);
+    background-repeat: no-repeat;
+    background-position:
+                        top 77px right 0px,
+                        bottom 665px left 25px,
+                        bottom 588px left 40px;
 }
 
 .about {
-    padding-bottom: 144px;
-
     &__title {
         color: $secondary-color;
         font-size: $font-size-xxlarge;
         font-weight: $font-weight-bold;
         padding-top: 94px;
+        padding-bottom: 24px;
     }
 
     &__subtitle {
@@ -84,11 +105,15 @@ body {
         margin-bottom: 72px;
     }
 }
+.about-mob{
+    display: none;
+}
 
 .games {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    padding-bottom: 144px;
 }
 
 .game {
@@ -99,7 +124,12 @@ body {
     background-color: $secondary-color;
     border-radius: 30px;
     height: 100%;
-    flex-grow: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover{
+        transform: scale(1.10);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
 
     &__img {
         max-width: 100%;
@@ -125,8 +155,13 @@ body {
         font-size: $font-size-big;
         font-weight: $font-weight-bold;
         padding-left: 32px;
-        padding-right: 32px;
         padding-bottom: 36px;
+    }
+    &__desc{
+        display: none;
+    }
+    &__mob-btn{
+        display: none;
     }
 }
 .game:nth-child(4),
@@ -148,3 +183,4 @@ body {
 
     }
 }
+@import 'mobile';

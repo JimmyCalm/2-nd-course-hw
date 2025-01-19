@@ -1,0 +1,90 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        background-image: 
+                    url(images/Star-mob.svg),
+                    url(images/Star\ 3.svg),
+                    url(images/Star\ 2.svg),
+                    url(images/Star\ 5.svg),
+                    url(images/Star\ 4.svg);
+    background-repeat: no-repeat;
+    background-position: 
+                        right 0px top 0px,
+                        left 91px top 64px,
+                        left 37px top 97px,
+                        right 86px bottom 74px,
+                        right 34px bottom 28px;
+    background-size:
+                    auto,
+                    21px 21px,
+                    35px 35px,
+                    18px 18px,
+                    39px 41px;                    
+        text-align: center;
+
+        &__title {
+            font-size: $mob-font-large;
+        }
+    }
+    .main{
+        background-image: none;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .about-mob {
+        display: block;
+        font-size: $mob-font-large;
+        font-weight: $font-weight-bold;
+        color: $secondary-color;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .games{
+        padding-bottom: 48px;
+    }
+
+    .game {
+        width: 343px;
+
+        &__btn {
+            display: none;
+        }
+
+        &__desc {
+            display: block;
+        }
+
+        &__mob-btn {
+            display: block;
+            @include mob-button-style;
+        }
+
+        &__name {
+            padding-top: 29px;
+            padding-left: 29px;
+            padding-bottom: 16px;
+        }
+
+        &__desc {
+            padding-left: 29px;
+            padding-bottom: 32px;
+        }
+
+        &__mob-btn {
+            margin-left: 29px;
+            margin-bottom: 32px;
+        }
+
+        &:nth-child(4),
+        &:nth-child(6) {
+            margin-top: -0px;
+        }
+    }
+}
