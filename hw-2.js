@@ -1,5 +1,5 @@
 //Задание 1
-let password = 'пароль';
+/*let password = 'пароль';
 let userInput = prompt('Введите пароль:');
 
 
@@ -115,4 +115,4 @@ if (clientOp === 0) {
     }
 } else {
     console.log('Неизвестная операционная система');
-}
+}*/
