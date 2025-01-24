@@ -5,32 +5,33 @@
     }
 
     .top {
-        background-image: 
-                    url(images/Star-mob.svg),
-                    url(images/Star\ 3.svg),
-                    url(images/Star\ 2.svg),
-                    url(images/Star\ 5.svg),
-                    url(images/Star\ 4.svg);
-    background-repeat: no-repeat;
-    background-position: 
-                        right 0px top 0px,
-                        left 91px top 64px,
-                        left 37px top 97px,
-                        right 86px bottom 74px,
-                        right 34px bottom 28px;
-    background-size:
-                    auto,
-                    21px 21px,
-                    35px 35px,
-                    18px 18px,
-                    39px 41px;                    
+        background-image:
+            url(images/Star-mob.svg),
+            url(images/Star\ 3.svg),
+            url(images/Star\ 2.svg),
+            url(images/Star\ 5.svg),
+            url(images/Star\ 4.svg);
+        background-repeat: no-repeat;
+        background-position:
+            right 0px top 0px,
+            left 91px top 64px,
+            left 37px top 97px,
+            right 86px bottom 74px,
+            right 34px bottom 28px;
+        background-size:
+            auto,
+            21px 21px,
+            35px 35px,
+            18px 18px,
+            39px 41px;
         text-align: center;
 
         &__title {
             font-size: $mob-font-large;
         }
     }
-    .main{
+
+    .main {
         background-image: none;
     }
 
@@ -38,53 +39,55 @@
         display: none;
     }
 
-    .about-mob {
-        display: block;
-        font-size: $mob-font-large;
-        font-weight: $font-weight-bold;
-        color: $secondary-color;
-        padding-top: 48px;
-        padding-bottom: 48px;
+    .mini-games {
+        &__title {
+            font-size: $mob-font-large;
+            font-weight: $font-weight-bold;
+            color: $secondary-color;
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
     }
-    .games{
+
+    .games {
         padding-bottom: 48px;
     }
 
-    .game {
+    .mini-game {
         width: 343px;
-
-        &__btn {
-            display: none;
+        height: auto;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        &:nth-child(odd) {
+            display: flex;
+            flex-direction: row;
+            
         }
 
-        &__desc {
-            display: block;
+        &__img {
+            width: 100%;
         }
 
         &__mob-btn {
-            display: block;
+            margin-left: 29px;
+            margin-bottom: 32px;
             @include mob-button-style;
         }
 
         &__name {
+            font-size: $font-size-xbig;
+
             padding-top: 29px;
             padding-left: 29px;
             padding-bottom: 16px;
         }
 
         &__desc {
+            font-size: $font-size-very-small;
             padding-left: 29px;
             padding-bottom: 32px;
-        }
-
-        &__mob-btn {
-            margin-left: 29px;
-            margin-bottom: 32px;
-        }
-
-        &:nth-child(4),
-        &:nth-child(6) {
-            margin-top: -0px;
         }
     }
 }
