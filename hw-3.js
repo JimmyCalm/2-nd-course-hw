@@ -1,5 +1,5 @@
 //Задание 1
-for (let i = 0; i < 2; i++) {
+/*for (let i = 0; i < 2; i++) {
     console.log('Привет');
 }
 
@@ -91,4 +91,4 @@ const numbers = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100)
 const minNumber = Math.min(...numbers);
 
 console.log("Массив чисел:", numbers);
-console.log("Минимальное число:", minNumber);
+console.log("Минимальное число:", minNumber);*/
