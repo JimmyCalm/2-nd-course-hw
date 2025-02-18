@@ -1,3 +1,4 @@
+/*
 //Задание 1
 function min(a, b) {
     return a < b ? a : b;
@@ -109,3 +110,4 @@ console.log(`Периметр круга 1: ${circle1.getPerimeter()}`);
 
 console.log(`Площадь круга 2: ${circle2.getArea()}`);
 console.log(`Периметр круга 2: ${circle2.getPerimeter()}`);
+*/
