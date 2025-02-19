@@ -1,3 +1,4 @@
+/*
 //Задание 1
 const arr = [1, 5, 4, 10, 0, 3];
 
@@ -135,3 +136,4 @@ let average = arrM.reduce((sum, num) => sum + num, 0) / arrM.length;
 
 console.log("Массив:", arrM); 
 console.log("Среднее арифметическое:", average); 
+*/
