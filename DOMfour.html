@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление элемента</title>
+</head>
+<body>
+
+    <p class="description">Абзац 1 (удаляемый)</p>
+    <p>Обычный абзац</p>
+    <p class="description">Абзац 2 (будет удалён следующим)</p>
+    <p class="description">Абзац 3</p>
+
+    <button id="removeParagraph">Удалить элемент</button>
+
+    <script>
+        
+        const button = document.getElementById("removeParagraph");
+
+        button.addEventListener("click", function() {
+
+            const paragraph = document.querySelector(".description");
+            
+            if (paragraph) {
+                paragraph.remove();
+            }
+        });
+    </script>
+
+</body>
+</html>

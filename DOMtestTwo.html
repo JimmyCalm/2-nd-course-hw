@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение текста элементов</title>
+</head>
+<body>
+
+    <p class="info">Это не изменится</p>
+    <p class="description">Текст 1</p>
+    <p class="content">Это тоже не изменится</p>
+    <p class="description">Текст 2</p>
+    <p class="other">Не изменится</p>
+    <p class="description">Текст 3</p>
+
+    <script>
+        const descriptionElements = document.querySelectorAll(".description");
+
+        descriptionElements.forEach(element => {
+            element.textContent = "Новый текст"; 
+        });
+    </script>
+
+</body>
+</html>
