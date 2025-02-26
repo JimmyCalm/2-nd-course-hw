@@ -111,6 +111,7 @@ body {
 
 .main {
     background-color: $primary-color;
+    transition: background-color 0.5s ease;
     background-image:
         url(images/Star\ 1.svg),
         url(images/Star\ 11.svg),

@@ -104,6 +104,7 @@ body {
 }
 .main {
   background-color: #202027;
+  transition: background-color 0.5s ease;
   background-image: url(images/Star\ 1.svg), url(images/Star\ 11.svg), url(images/Star\ 12.svg), url(images/Star\ 7.svg), url(images/Star\ 6.svg), url(images/Star\ 10.svg), url(images/Star\ 8.svg);
   background-repeat: no-repeat;
   background-position: top 77px right 0px, top 770px left 25px, top 822px left 40px, bottom 3367px right 123px, bottom 3298px right 44px, bottom 45px right 150px, bottom 65px right 52px;
@@ -292,6 +293,23 @@ body {
   }
   .top__btn {
     margin-bottom: 131px;
+    box-sizing: border-box;
+    font: inherit;
+    width: 285px;
+    height: 55px;
+    border-radius: 60px;
+    background-color: #202027;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #202027;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .top__btn:hover {
+    background-color: #FFFFFF;
+    color: #202027;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   }
   .nav {
     height: 51px;

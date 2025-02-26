@@ -39,6 +39,7 @@
         
         &__btn {
             margin-bottom: 131px;
+            @include mob-button-style;
         }
     }
 
