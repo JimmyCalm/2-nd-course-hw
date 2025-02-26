@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -73,7 +77,36 @@ body {
 
 .nav {
     height: 90px;
+    width: 100%;
     background-color: $nav-color;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-size: $font-size-big ;
+        font-weight: $font-weight-bold;
+        display: inline-block;
+        animation: nav 10s linear infinite;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__img {
+        vertical-align: middle;
+        margin: 0 51px;
+    }
+}
+
+@keyframes nav {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-150%);
+    }
 }
 
 .main {

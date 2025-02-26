@@ -27,7 +27,30 @@
         text-align: center;
 
         &__title {
+            padding-top: 147px;
             font-size: $mob-font-large;
+            line-height: $line-height-large;
+        }
+
+        &__subtitle {
+            font-size: $font-size-very-small;
+            line-height: $line-height-small;
+        }
+        
+        &__btn {
+            margin-bottom: 131px;
+        }
+    }
+
+    .nav{
+        height: 51px;
+
+        &__text{
+            font-size: $font-size-very-small;
+        }
+        &__img{
+            width: 19px;
+            height: 19px;
         }
     }
 
@@ -40,6 +63,7 @@
     }
 
     .mini-games {
+        padding-bottom: 48px;
         &__title {
             font-size: $mob-font-large;
             font-weight: $font-weight-bold;
@@ -86,6 +110,7 @@
 
         &__desc {
             font-size: $font-size-very-small;
+            line-height: $line-height-small;
             padding-left: 29px;
             padding-bottom: 32px;
         }
