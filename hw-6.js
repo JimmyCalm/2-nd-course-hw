@@ -1,3 +1,4 @@
+/*
 //Задание 1
 let str = 'js';
 let upperStr = str.toUpperCase();
@@ -95,3 +96,4 @@ function formatDate(date) {
 
 let presentDate = new Date();
 console.log(formatDate(presentDate));
+*/
