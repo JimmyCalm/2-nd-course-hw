@@ -1,3 +1,4 @@
+/*
 //Задание 1
 const people = [
     { name: 'Глеб', age: 29 },
@@ -74,3 +75,4 @@ function sayHi (name) {
 }
 
 delayForSecond(() => sayHi('Глеб'));
+*/
