@@ -27,7 +27,34 @@
         text-align: center;
 
         &__title {
+            padding-top: 147px;
             font-size: $mob-font-large;
+            line-height: $line-height-large;
+        }
+
+        &__subtitle {
+            font-size: $font-size-very-small;
+            line-height: $line-height-small;
+            width: 296px;
+            margin-left: 23px;
+            padding-bottom: 36px;
+        }
+        
+        &__btn {
+            margin-bottom: 131px;
+            @include mob-button-style;
+        }
+    }
+
+    .nav{
+        height: 51px;
+
+        &__text{
+            font-size: $font-size-very-small;
+        }
+        &__img{
+            width: 19px;
+            height: 19px;
         }
     }
 
@@ -40,6 +67,7 @@
     }
 
     .mini-games {
+        padding-bottom: 48px;
         &__title {
             font-size: $mob-font-large;
             font-weight: $font-weight-bold;
@@ -47,6 +75,10 @@
             padding-top: 48px;
             padding-bottom: 48px;
         }
+    }
+
+    .block{
+        gap: 24px;
     }
 
     .games {
@@ -78,7 +110,7 @@
 
         &__name {
             font-size: $font-size-xbig;
-
+            max-width: 285px;
             padding-top: 29px;
             padding-left: 29px;
             padding-bottom: 16px;
@@ -86,8 +118,27 @@
 
         &__desc {
             font-size: $font-size-very-small;
+            line-height: $line-height-small;
             padding-left: 29px;
             padding-bottom: 32px;
+            
+        }
+
+        &__br{
+            display: none;
+        }
+        &__brOne{
+            display: block;
+        }
+        &__brTwo{
+            display: block;
+        }
+    }
+
+    .footer{
+        height: 100px;
+        &__text{
+            font-size: $font-size-very-small;
         }
     }
 }
