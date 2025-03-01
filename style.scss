@@ -54,6 +54,7 @@ body {
         font-weight: $font-weight-regular;
         line-height: $line-height-medium;
         padding-bottom: 48px;
+        max-width: 720px;
 
         &_bold {
             font-weight: $font-weight-semibold;
@@ -276,6 +277,12 @@ body {
     &__mob-btn {
         @include button-style;
         margin-left: 48px;
+    }
+    &__brOne{
+        display: none;
+    }
+    &__brTwo{
+        display: none;
     }
 }
 

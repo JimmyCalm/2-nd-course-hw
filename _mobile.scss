@@ -35,6 +35,9 @@
         &__subtitle {
             font-size: $font-size-very-small;
             line-height: $line-height-small;
+            width: 296px;
+            margin-left: 23px;
+            padding-bottom: 36px;
         }
         
         &__btn {
@@ -74,6 +77,10 @@
         }
     }
 
+    .block{
+        gap: 24px;
+    }
+
     .games {
         padding-bottom: 48px;
     }
@@ -103,7 +110,7 @@
 
         &__name {
             font-size: $font-size-xbig;
-
+            max-width: 285px;
             padding-top: 29px;
             padding-left: 29px;
             padding-bottom: 16px;
@@ -114,6 +121,24 @@
             line-height: $line-height-small;
             padding-left: 29px;
             padding-bottom: 32px;
+            
+        }
+
+        &__br{
+            display: none;
+        }
+        &__brOne{
+            display: block;
+        }
+        &__brTwo{
+            display: block;
+        }
+    }
+
+    .footer{
+        height: 100px;
+        &__text{
+            font-size: $font-size-very-small;
         }
     }
 }
