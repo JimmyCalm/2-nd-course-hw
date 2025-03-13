@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -50,6 +54,7 @@ body {
         font-weight: $font-weight-regular;
         line-height: $line-height-medium;
         padding-bottom: 48px;
+        max-width: 720px;
 
         &_bold {
             font-weight: $font-weight-semibold;
@@ -73,11 +78,41 @@ body {
 
 .nav {
     height: 90px;
+    width: 100%;
     background-color: $nav-color;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        font-size: $font-size-big ;
+        font-weight: $font-weight-bold;
+        display: inline-block;
+        animation: nav 10s linear infinite;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__img {
+        vertical-align: middle;
+        margin: 0 51px;
+    }
+}
+
+@keyframes nav {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-150%);
+    }
 }
 
 .main {
     background-color: $primary-color;
+    transition: background-color 0.5s ease;
     background-image:
         url(images/Star\ 1.svg),
         url(images/Star\ 11.svg),
@@ -242,6 +277,12 @@ body {
     &__mob-btn {
         @include button-style;
         margin-left: 48px;
+    }
+    &__brOne{
+        display: none;
+    }
+    &__brTwo{
+        display: none;
     }
 }
 
